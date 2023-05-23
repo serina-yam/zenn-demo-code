@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <title>how to use datalist</title>
+  </head>
+  <body>
+    <div>
+      <label for="fruit">お好きな果物を選んでください：</label>
+        <input id="fruit-input1" value="" list="fruit-select1" name="fruit" />
+        <datalist id="fruit-select1" class="fruit-select">
+          <option value=""></option>
+          <option value="りんご" data-id="data1-id1"></option>
+          <option value="バナナ" data-id="data1-id2"></option>
+          <option value="オレンジ" data-id="data1-id3"></option>
+          <option value="ぶどう" data-id="data1-id4"></option>
+          <option value="スイカ" data-id="data1-id5"></option>
+        </datalist>
+        <input
+          id="fruit-input-hidden1"
+          type="hidden"
+          name="fruit-Hidden"
+          value=""
+        />
+        <label for="price">価格：</label>
+        <input id="price1" value="" name="price" />
+    </div>
+    <div>
+        <label for="fruit">お好きな果物を選んでください：</label>
+          <input id="fruit-input2" value="" list="fruit-select2" name="fruit" />
+          <datalist id="fruit-select2" class="fruit-select">
+            <option value=""></option>
+            <option value="りんご" data-id="data2-id1"></option>
+            <option value="バナナ" data-id="data2-id2"></option>
+            <option value="オレンジ" data-id="data2-id3"></option>
+            <option value="ぶどう" data-id="data2-id4"></option>
+            <option value="スイカ" data-id="data2-id5"></option>
+          </datalist>
+          <input
+            id="fruit-input-hidden2"
+            type="hidden"
+            name="fruit-Hidden"
+            value=""
+          />
+          <label for="price">価格：</label>
+          <input id="price2" value="" name="price" />
+      </div>
+    <script src="script.js"></script>
+  </body>
+</html>
